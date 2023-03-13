@@ -403,7 +403,7 @@ a {
 
 .AudioActive .songs:hover,
 .AudioActive .songs:hover .song .section .songName .songSpan {
-  color: #f1f1f1;
+  color: #15111e;
   transition: all 0.3s;
   cursor: pointer;
 }
