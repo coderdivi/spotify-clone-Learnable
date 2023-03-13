@@ -1,0 +1,502 @@
+.mainContainer {
+  /* height: 100vh; */
+  flex-grow: 1;
+  z-index: 1;
+  background:#e7e8f3;
+  backdrop-filter: blur(10px);
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.mainContainer .contain {
+  width: 100%;
+}
+
+.arrowIcons {
+  margin-left: 5%;
+  display: flex;
+}
+
+.arrowRight {
+  margin: 0 200%;
+}
+.searchMargin {
+  display: flex;
+  align-items: center;
+  margin-top: 7%;
+  justify-content: space-evenly;
+  /* margin-bottom: 10%; */
+}
+.searchBox {
+  width: 40%;
+  height: 45px;
+  position: relative;
+  color: #15111e;;
+  overflow: hidden;
+  border-radius: 10px;
+  margin-left: 41%;
+}
+
+.searchBox input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  /* background: rgba(0, 0, 0, 0.5); */
+
+  /* box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4); */
+  padding-left: 15px;
+  color: #f1f1f1;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.searchBox input::placeholder {
+  color: #848484;
+}
+
+.searchBox i {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 45px;
+  height: 45px;
+  text-align: center;
+  line-height: 54px;
+  font-size: 20px;
+  background-color: #555;
+}
+.topBannerTxt {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 5.2%;
+}
+
+.topBannerTxt h1 {
+  font-size: 3rem;
+  margin-top: 0;
+}
+
+#bannerSpan {
+  margin-left: 5.5%;
+}
+#bannerSpan i {
+  margin-left: 60%;
+}
+.topBannerSpan {
+  display: flex;
+  align-items: center;
+}
+.topBannerSpan p {
+  margin-left: -50%;
+}
+/* .topBannerSpan i :nth-of-type(1){
+    margin-left: 60%;
+ } */
+.Banner {
+  height: 300px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  margin-bottom: 7%;
+}
+
+.Banner .bannerImg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.bannerImg {
+  border-radius: 30px;
+}
+
+.Banner .bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 5rem;
+  background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.9));
+}
+
+.content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 20px 30px;
+  display: flex;
+  flex-direction: column;
+  z-index: 3;
+}
+
+.breadCrump {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+}
+
+.breadCrump P {
+  color: #848484;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #f1f1f1;
+}
+
+.content .breadCrump i {
+  color: #f1f1f1;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.content .buttonView {
+  color: #f1f1f1;
+}
+
+.content .buttonView .left .name {
+  display: flex;
+  align-items: center;
+}
+
+.content .buttonView .left .name h2 {
+  font-size: 50px;
+}
+
+.content .buttonView .left .name img {
+  width: 30px;
+  margin-left: 10px;
+}
+
+.content .buttonView .left p {
+  font-size: 14px;
+}
+
+.content .buttonView .left p i {
+  margin-right: 6px;
+}
+
+.content .buttonView .left p span {
+  color: #848484;
+  margin-left: 6px;
+}
+
+.content .buttonView .right {
+  display: flex;
+  align-items: center;
+}
+
+.content .buttonView .right a {
+  text-decoration: none;
+  padding: 10px 30px;
+  font-size: 18px;
+  color: #f1f1f1;
+  border-radius: 100vw;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+.content .buttonView .right a i {
+  margin-right: 10px;
+  font-size: 14px;
+}
+
+.content .buttonView .right a:nth-child(1) {
+  background: #39aa24;
+}
+
+.content .buttonView .right a:nth-child(2) {
+  background: rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  margin: 0 20px;
+}
+.buttonView {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.mainContainer .menuList {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 30px;
+  background: #2c2c2c;
+}
+
+.menuList ul {
+  display: flex;
+  align-items: center;
+}
+
+.menuList ul li {
+  list-style: none;
+  margin: 0 25px;
+  position: relative;
+}
+.topBannerTxt h1{
+  color: #15111e;
+}
+.mainContainer .menuList ul li a {
+  text-decoration: none;
+  color: #848484;
+}
+
+.mainContainer .menuList ul li::before {
+  position: absolute;
+  content: "";
+  bottom: -20px;
+  left: 10px;
+  width: 0px;
+  height: 5px;
+  border-radius: 5px;
+  background: #f1f1f1;
+}
+
+.mainContainer .menuList ul li:hover::before,
+.mainContainer .menuList ul li.active::before {
+  width: 20px;
+  transition: width 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.mainContainer .menuList ul li:hover a,
+.mainContainer .menuList ul li.active a {
+  color: #f1f1f1;
+  transition: 0.3s ease;
+}
+
+.mainContainer .menuList p {
+  color: #f1f1f1;
+  font-size: 14px;
+}
+
+.mainContainer p i {
+  font-size: 12px;
+  margin-right: 6px;
+}
+
+.mainContainer p span {
+  margin-left: 6px;
+  color: #848484;
+}
+
+.AudioActive {
+  padding: 10px 10px;
+}
+.AudioActiveFlex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 6%;
+}
+.AudioActive,
+a {
+  font-size: 18px;
+  color: #15111e;
+  text-decoration: none;
+}
+.AudioActive a {
+  margin-left: -20%;
+}
+.AudioActive h1 {
+  margin: 0 60px;
+  
+  font-weight: 900;
+}
+
+.AudioActive .songsContainer {
+  height: 220px;
+  overflow-y: scroll;
+  overflow-x: scroll;
+  width: 100%;
+}
+
+.AudioActive .songs {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 600;
+  color: #848484;
+  width: 100%;
+  margin: 0 30px;
+  padding: 5px;
+  padding-bottom: 5px;
+}
+
+.AudioActive .songs.active,
+.AudioActive .songs.active .song .section .songName .songSpan {
+  color: #f1f1f1 !important;
+}
+
+.AudioActive .songs .count {
+  margin-right: 10px;
+}
+
+.AudioActive .songs .song {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 5px;
+}
+
+.AudioActive .songs .song .imgBox {
+  width: 45px;
+  min-width: 45px;
+  height: 45px;
+  border-radius: 0.5em;
+  background-color: #848484;
+  margin-right: 10px;
+  overflow: hidden;
+}
+
+.AudioActive .songs .song .imgBox img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.AudioActive .songs .song .section {
+  display: flex;
+  width: 100%;
+}
+
+.AudioActive .songs .song .section .songName {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+
+.AudioActive .songs .song .section .songName .songSpan {
+  margin-left: 0;
+  font-size: 12px;
+}
+
+.AudioActive .songs .song {
+  margin-left: auto;
+}
+
+.section1 {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+.AudioActive .songs .song .section .hits p {
+  margin: 0 20px;
+}
+
+.AudioActive .songs .song .section .hits p:nth-child(1) {
+  margin-left: 0;
+}
+
+.AudioActive .songs .song .section .hits .favourite i {
+  color: #49e12e !important;
+  filter: drop-shadow(0px 0px 4px #49e12e);
+}
+
+.AudioActive .songs:hover,
+.AudioActive .songs:hover .song .section .songName .songSpan {
+  color: #f1f1f1;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.AudioActive .songs:hover .song .imgBox img {
+  transform: scale(1.2);
+  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+@media screen and (max-width: 550px) {
+  .mainContainer {
+    min-width: 380px;
+  }
+
+  .content {
+    padding: 10px 15px;
+  }
+
+  .content .breadCrump P {
+    font-size: 12px;
+  }
+
+  .content .breadCrump i {
+    font-size: 14px;
+  }
+
+  .content .buttonView .left .name h2 {
+    font-size: 25px;
+  }
+
+  .content .buttonView .right a {
+    padding: 5px 15px;
+    font-size: 12px;
+    margin: 0 10px;
+  }
+
+  .menuList ul li {
+    margin: 0 5px;
+  }
+
+  .mainContainer .menuList ul li a {
+    font-size: 14px;
+  }
+
+  .mainContainer .menuList p {
+    font-size: 12px;
+  }
+
+  .mainContainer .menuList p i {
+    font-size: 10px;
+  }
+
+  .mainContainer .menuList p span {
+    margin-left: 0px;
+    font-size: 10px;
+    text-align: center;
+    display: block;
+  }
+
+  .mainContainer .menuList {
+    padding: 10px 15px;
+  }
+
+  .AudioList {
+    padding: 10px 5px;
+  }
+
+  .AudioList .songs .song .section {
+    flex-direction: column;
+  }
+
+  .AudioList .songs .song .section .songName {
+    width: 100%;
+  }
+
+  .AudioList .songs .song .section .hits {
+    margin-left: 0;
+    margin-top: 5px;
+    justify-content: space-between;
+  }
+}
+
+/* @media screen and (max-width: 950px) {
+  .Banner {
+    height: 240px !important;
+    position: relative;
+  }
+} */
+@media  screen and (max-width: 640px){
+  .mainContainer p {
+    display: none;
+  }
+  .AudioActive h1{
+    font-size: 15px;
+  }
+}
