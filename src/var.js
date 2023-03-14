@@ -1,5 +1,4 @@
-
-export const CLIENT_ID = "b3fa09d4e5ed4b3385c706e5b94dac18";
-export const REDIRECT_URI =  "http://localhost:3000/";
-export const AUTH_ENDPOINT = "https://accounts.spotify.com/authorize";
-export const RESPONSE_TYPE =  "token";
+export const CLIENT_ID = process.env.REACT_APP_CLIENT_ID
+export const REDIRECT_URI =  process.env.REACT_APP_REDIRECT_URI;
+export const AUTH_ENDPOINT = process.env.REACT_APP_AUTH_ENDPOINT;
+export const RESPONSE_TYPE =  process.env.REACT_APP_RESPONSE_TYPE;
